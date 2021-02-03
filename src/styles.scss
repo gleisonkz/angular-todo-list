@@ -1,4 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+@import "mixins";
+@import "colors";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: $color-background;
+  font-family: $font-primary;
+  @include flex-center;
+}
+
+* {
+  margin: 0;
+  bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  @each $name, $color in $project-colors {
+    --color-#{$name}: #{$color};
+  }
+}
+
+:root.dark-mode {
+  @each $name, $color in $project-colors-theme-dark {
+    --color-#{$name}: #{$color};
+  }
+}
