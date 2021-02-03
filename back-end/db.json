@@ -1,0 +1,24 @@
+{
+  "todo": [
+    {
+      "todoID": 1,
+      "title": "Aprender Angular",
+      "isDone": false
+    },
+    {
+      "todoID": 2,
+      "title": "Aprender React",
+      "isDone": false
+    },
+    {
+      "todoID": 3,
+      "title": "Aprender Vue",
+      "isDone": false
+    },
+    {
+      "todoID": 4,
+      "title": "Aprender Svelte",
+      "isDone": false
+    }
+  ]
+}
