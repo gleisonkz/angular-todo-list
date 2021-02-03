@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "colors";
+
+.todo {
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content 1fr auto auto;
+  column-gap: 10px;
+  height: rem(76.56);
+  width: 420px;
+
+  background-color: $color-surface;
+  padding: rem(10 20);
+  border-radius: $global-radius;
+
+  &__mode-container {
+    width: 100%;
+
+    mat-form-field {
+      width: 100%;
+    }
+  }
+
+  &__checkbox {
+    grid-row: 1;
+  }
+
+  &__text {
+    user-select: none;
+    font-size: rem(16);
+    color: $color-text-on-surface;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: white;
+  }
+}
