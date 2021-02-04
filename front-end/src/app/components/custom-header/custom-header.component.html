@@ -1,0 +1,26 @@
+<header class="header">
+  <h1 class="header__title">(NG) => Devs | TODO LIST</h1>
+  <h4 class="header__subtitle">Angular 11 Development by Gleison de Almeida</h4>
+
+  <form [formGroup]="formGroup">
+    <mat-form-field [appearance]="'outline'">
+      <mat-label>Nova Tarefa</mat-label>
+      <input
+        formControlName="todoName"
+        matInput
+        placeholder="Digite uma nova tarefa para cadastro"
+        (keyup.enter)="newTodo()"
+      />
+      <button
+        (click)="newTodo()"
+        [disabled]="formGroup.invalid"
+        class="header__btn"
+        matSuffix
+      >
+        <mat-icon matSuffix>add_task</mat-icon>
+      </button>
+
+      <mat-hint>aperte enter para salvar ou clique no botão</mat-hint>
+    </mat-form-field>
+  </form>
+</header>

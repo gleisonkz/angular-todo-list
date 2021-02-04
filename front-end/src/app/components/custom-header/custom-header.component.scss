@@ -1,0 +1,44 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "colors";
+
+.header {
+  padding: rem(20);
+  @include flex-center(column);
+  min-height: rem(200);
+  background-color: $color-surface;
+
+  &__title,
+  &__subtitle,
+  mat-hint {
+    color: $color-title-on-surface;
+  }
+
+  &__btn {
+    background-color: transparent;
+    outline: none;
+
+    mat-icon {
+      cursor: pointer;
+      user-select: none;
+      color: white;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &:disabled mat-icon {
+      cursor: not-allowed;
+    }
+  }
+
+  mat-form-field {
+    width: rem(500);
+  }
+}

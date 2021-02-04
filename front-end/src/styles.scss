@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "colors";
+@import "material";
 
 html,
 body {
@@ -11,7 +12,6 @@ body {
   margin: 0;
   background-color: $color-background;
   font-family: $font-primary;
-  @include flex-center;
 }
 
 * {

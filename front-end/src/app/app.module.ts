@@ -8,12 +8,18 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import { CustomHeaderComponent } from './components/custom-header/custom-header.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CustomErrorStateMatcher } from './custom-error-state-matcher';
 
 @NgModule({
-  declarations: [AppComponent, TodoComponent, TodoListComponent],
+  declarations: [
+    AppComponent,
+    TodoComponent,
+    TodoListComponent,
+    CustomHeaderComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
