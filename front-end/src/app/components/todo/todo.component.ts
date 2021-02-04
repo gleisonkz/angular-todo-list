@@ -19,7 +19,7 @@ import { Todo, TodoResource } from './../../models/todo.model';
   styleUrls: ['./todo.component.scss'],
 })
 export class TodoComponent implements OnInit {
-  @Output() delete = new EventEmitter<void>();
+  @Output() delete = new EventEmitter<number>();
   @Output() update = new EventEmitter<UpdateEvent<TodoResource>>();
   @Input() todo: Todo;
   @ViewChild('myInput') input: ElementRef<HTMLInputElement>;

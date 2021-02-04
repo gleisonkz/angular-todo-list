@@ -15,14 +15,23 @@ export class TodoListComponent implements OnInit {
   constructor(private todoService: TodoService) {}
 
   ngOnInit(): void {
+    this.getAllTodos();
+  }
+
+  getAllTodos() {
     this.todoService
       .getAllEntities()
       .subscribe((todos: Todo[]) => (this.todos = todos));
   }
 
   updateTodo(event: UpdateEvent<TodoResource>): void {
-    console.log(event);
-
     this.todoService.putEntity(event.itemID, event.item).subscribe();
+  }
+
+  deleteTodo(todoID: number) {
+    this.todoService.deleteEntity(todoID).subscribe(() => {
+      alert(`Você deletou o todo ID: ${todoID}`);
+      this.getAllTodos();
+    });
   }
 }

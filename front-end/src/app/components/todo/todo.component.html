@@ -24,9 +24,10 @@
   <button matButton (click)="edit()" class="todo__btn todo__btn--edit">
     <mat-icon>edit</mat-icon>
   </button>
-  <button (click)="delete.emit()" class="todo__btn todo__btn--delete">
+  <button (click)="delete.emit(todo.id)" class="todo__btn todo__btn--delete">
     <mat-icon>delete</mat-icon>
   </button>
 </div>
+<span style="color: white">{{ this.todo.id | json }}</span>
 <span style="color: white">{{ this.formGroup.value | json }}</span>
 <span style="color: white">{{ this.formGroup.valid | json }}</span>
