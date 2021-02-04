@@ -9,15 +9,10 @@
 
 ::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
 ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
-  background-color: #2cc3f8 !important;
+  background-color: $color-primary !important;
   svg path {
-    fill: #2cc3f8 !important;
+    fill: $color-primary !important;
   }
-}
-
-.mat-input-element,
-.mat-select-value {
-  color: white !important;
 }
 
 .todo {
@@ -53,6 +48,7 @@
     user-select: none;
     font-size: rem(16);
     color: white;
+    align-items: center;
   }
 
   &__btn {
@@ -64,9 +60,10 @@
 
     &--edit {
       &:hover {
-        color: #2cc3f8;
+        color: $color-primary;
       }
     }
+
     &--delete {
       &:hover {
         color: red;
