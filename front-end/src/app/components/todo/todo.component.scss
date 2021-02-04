@@ -3,17 +3,38 @@
 @import "functions";
 @import "colors";
 
+::ng-deep .mat-checkbox-frame {
+  border-color: white;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #2cc3f8 !important;
+  svg path {
+    fill: #2cc3f8 !important;
+  }
+}
+
+.mat-input-element,
+.mat-select-value {
+  color: white !important;
+}
+
 .todo {
-  display: grid;
-  align-items: center;
-  grid-template-columns: min-content 1fr auto auto;
-  column-gap: 10px;
+  display: flex;
   height: rem(76.56);
   width: 420px;
-
   background-color: $color-surface;
   padding: rem(10 20);
   border-radius: $global-radius;
+
+  &__form {
+    display: grid;
+    align-items: center;
+    flex: 1;
+    grid-template-columns: min-content 1fr auto auto;
+    column-gap: 10px;
+  }
 
   &__mode-container {
     width: 100%;
@@ -25,16 +46,35 @@
 
   &__checkbox {
     grid-row: 1;
+    display: flex;
   }
 
   &__text {
     user-select: none;
     font-size: rem(16);
-    color: $color-text-on-surface;
+    color: white;
   }
 
   &__btn {
     background-color: transparent;
+    cursor: pointer;
+    outline: none;
     color: white;
+    transition: color 0.3s;
+
+    &--edit {
+      &:hover {
+        color: #2cc3f8;
+      }
+    }
+    &--delete {
+      &:hover {
+        color: red;
+      }
+    }
+
+    & + & {
+      margin-left: rem(10);
+    }
   }
 }
