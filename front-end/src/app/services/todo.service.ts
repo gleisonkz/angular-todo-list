@@ -11,7 +11,7 @@ export class TodoService {
   constructor(private http: HttpClient) {}
   private readonly ENDPOINT = `${environment.apiURL}/todo`;
 
-  postEntity(todo: TodoResource): Observable<any> {
+  postEntity(todo: TodoResource): Observable<Todo> {
     return this.http.post<Todo>(this.ENDPOINT, todo);
   }
 
