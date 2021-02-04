@@ -1,0 +1,13 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "colors";
+
+.todo-list {
+  margin-top: rem(20);
+  @include flex-center(column);
+
+  todo + todo {
+    margin-top: rem(10);
+  }
+}

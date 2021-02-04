@@ -1,6 +1,8 @@
-<todo
-  (update)="updateTodo($event)"
-  (delete)="deleteTodo($event)"
-  *ngFor="let todo of todos"
-  [todo]="todo"
-></todo>
+<div class="todo-list">
+  <todo
+    (update)="updateTodo($event)"
+    (delete)="deleteTodo($event)"
+    *ngFor="let todo of todos"
+    [todo]="todo"
+  ></todo>
+</div>
