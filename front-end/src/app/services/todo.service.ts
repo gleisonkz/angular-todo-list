@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from './../../environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { Todo, TodoResource } from './../models/todo.model';
 
 @Injectable({
@@ -15,7 +15,7 @@ export class TodoService {
     return this.http.post<Todo>(this.ENDPOINT, todo);
   }
 
-  putEntity(todoID: number, todo: TodoResource): Observable<any> {
+  putEntity(todoID: number, todo: TodoResource): Observable<Todo> {
     return this.http.put<Todo>(`${this.ENDPOINT}/${todoID}`, todo);
   }
 
@@ -23,8 +23,8 @@ export class TodoService {
     return this.http.get<Todo>(`${this.ENDPOINT}/${todoID}`);
   }
 
-  getAllEntities(): Observable<Todo> {
-    return this.http.get<Todo>(this.ENDPOINT);
+  getAllEntities(): Observable<Todo[]> {
+    return this.http.get<Todo[]>(this.ENDPOINT);
   }
 
   deleteEntity(todoID: number): Observable<Todo> {

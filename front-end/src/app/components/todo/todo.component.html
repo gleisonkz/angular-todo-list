@@ -1,20 +1,25 @@
-<form [formGroup]="formGroup" class="todo">
-  <mat-checkbox formControlName="isDone" class="todo__checkbox"></mat-checkbox>
-  <!-- <mat-icon>add_task</mat-icon> -->
-  <div class="todo__mode-container" [ngSwitch]="currentMode">
-    <span class="todo__text" *ngSwitchCase="'show'">{{
-      todoControl.value
-    }}</span>
-
-    <mat-form-field *ngSwitchCase="'edit'">
-      <input
-        #myInput
-        (keyup.enter)="save()"
-        [formControl]="todoControl"
-        matInput
-      />
-    </mat-form-field>
-  </div>
+<div class="todo">
+  <form [formGroup]="formGroup" class="todo__form" [ngSwitch]="currentMode">
+    <mat-checkbox
+      (change)="save(false)"
+      formControlName="isDone"
+      class="todo__checkbox"
+    >
+      <span class="todo__text" *ngSwitchCase="'show'">{{
+        todoControl.value
+      }}</span></mat-checkbox
+    >
+    <div class="todo__mode-container">
+      <mat-form-field *ngSwitchCase="'edit'">
+        <input
+          #myInput
+          (keyup.enter)="save()"
+          [formControl]="todoControl"
+          matInput
+        />
+      </mat-form-field>
+    </div>
+  </form>
 
   <button matButton (click)="edit()" class="todo__btn todo__btn--edit">
     <mat-icon>edit</mat-icon>
@@ -22,6 +27,6 @@
   <button (click)="delete.emit()" class="todo__btn todo__btn--delete">
     <mat-icon>delete</mat-icon>
   </button>
-</form>
+</div>
 <span style="color: white">{{ this.formGroup.value | json }}</span>
 <span style="color: white">{{ this.formGroup.valid | json }}</span>

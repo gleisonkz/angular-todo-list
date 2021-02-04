@@ -23,8 +23,6 @@ export class TodoListComponent implements OnInit {
   updateTodo(event: UpdateEvent<TodoResource>): void {
     console.log(event);
 
-    this.todoService
-      .putEntity(event.itemID, event.item)
-      .subscribe((todo) => console.log(todo));
+    this.todoService.putEntity(event.itemID, event.item).subscribe();
   }
 }

@@ -1,5 +1,5 @@
 export interface Todo extends TodoResource {
-  todoID: number;
+  id: number;
 }
 
 export interface TodoResource {

@@ -10,7 +10,8 @@ import {
 } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Mode } from 'src/app/models/mode.model';
-import { Todo } from './../../models/todo.model';
+import { UpdateEvent } from 'src/app/models/update-event';
+import { Todo, TodoResource } from './../../models/todo.model';
 
 @Component({
   selector: 'todo',
@@ -19,7 +20,7 @@ import { Todo } from './../../models/todo.model';
 })
 export class TodoComponent implements OnInit {
   @Output() delete = new EventEmitter<void>();
-  @Output() update = new EventEmitter<string>();
+  @Output() update = new EventEmitter<UpdateEvent<TodoResource>>();
   @Input() todo: Todo;
   @ViewChild('myInput') input: ElementRef<HTMLInputElement>;
 
@@ -33,27 +34,25 @@ export class TodoComponent implements OnInit {
     this.todoControl = new FormControl(this.todo.title, [Validators.required]);
     this.formGroup = new FormGroup({
       title: this.todoControl,
-      isDone: new FormControl(false),
+      isDone: new FormControl(this.todo.isDone),
     });
   }
 
   changeMode(): void {
-    console.log('emit');
     this.currentMode = this.currentMode === Mode.Edit ? Mode.Show : Mode.Edit;
     this.changeDetectorRef.detectChanges();
   }
 
   edit(): void {
-    console.log('emit');
     this.currentMode = Mode.Edit;
     this.changeDetectorRef.detectChanges();
     this.input.nativeElement.focus();
     this.input.nativeElement.select();
   }
 
-  save(): void {
+  save(changeMode = true): void {
     if (this.formGroup.invalid) return;
-    this.update.emit();
-    this.changeMode();
+    this.update.emit({ itemID: this.todo.id, item: this.formGroup.value });
+    changeMode && this.changeMode();
   }
 }
