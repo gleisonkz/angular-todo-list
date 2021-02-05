@@ -1,29 +1,7 @@
 {
-  "todo": [
-    {
-      "title": "Angular",
-      "isDone": true,
-      "id": 3
-    },
-    {
-      "title": "comprar pão com alho",
-      "isDone": false,
-      "id": 7
-    },
-    {
-      "title": "Aprender a usa o toast",
-      "isDone": false,
-      "id": 8
-    },
-    {
-      "title": "mais 1 caso",
-      "isDone": false,
-      "id": 10
-    },
-    {
-      "title": "outra tarefa",
-      "isDone": false,
-      "id": 11
-    }
-  ]
+  "todo": {
+    "title": "string",
+    "isDone": "boolean",
+    "id": "int"
+  }
 }
