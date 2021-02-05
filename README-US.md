@@ -6,12 +6,12 @@
 </div>
 
 <p align="center">
-  <img alt="Comics ++" src=".github/logo.png" width="250px"/>
+  <img alt="Comics ++" src=".github/logo.jpeg" width="250px"/>
 </p>
 
 <p align="center"> 
-  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/gleisonkz/kanban-board?color=3498db&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/kanban-board?color=3498db&style=for-the-badge">   
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">   
   <a href="https://github.com/gleisonkz">
     <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge">
   </a>  
@@ -23,6 +23,7 @@
  <a href="#information_source-about">About</a> •
  <a href="#arrow_forward-run">Run</a> •
  <a href="#hammer_and_wrench-technologies">Technologies</a> • 
+ <a href="#brain-concepts">Concepts</a> •
  <a href="#sparkles-features">Features</a> •
  <a href="#boy-author">Author</a> •
  <a href="#balance_scale-license">License</a>
@@ -33,8 +34,6 @@
 ## :eye_speech_bubble: **Preview**
 
 <div align="center">
-
-To see the deployment [Click Here](https://kz-kanban-board.netlify.app/)
 
 | Preview
 | :------------------------------------------------------------------------------------:
@@ -60,10 +59,12 @@ Application built to practice some concepts about Drag and drop with Angular 11.
 
 To run this project you need to clone this repository, have the NOde Package Manager ([`NPM`](https://www.npmjs.com/get-npm)) or the YARN Package Manager ([`YARN`](https://yarnpkg.com/getting-started)) installed.
 
-Open the command prompt in the project directory, and execute the following commands:
+🌐 FrontEnd
+
+Open the command prompt in the project directory at angular-todo-list/front-end, and execute the following commands:
 
 <details>
-  <summary><i>com <b>npm</b></i></summary>
+  <summary><i>with <b>npm</b></i></summary>
   
   ```bash
   # Install dependencies
@@ -78,11 +79,11 @@ $ ng serve --open ou ng s -o
 </details>
 
 <details>
-<summary><i>com <b>yarn</b></i></summary>
+<summary><i>with <b>yarn</b></i></summary>
 
 ```bash
 # Install dependencies
-$ yarn
+$ yarn install
 
 # Start development server
 $ ng serve --open ou ng s -o
@@ -92,6 +93,46 @@ $ ng serve --open ou ng s -o
 </details>
 
 > ⚠️ The development server will start on port: 4200 - Access <http://localhost:4200>
+
+</div>
+
+<div align="center">
+
+---
+
+🖥 BackEnd
+
+Open the command prompt in the project directory at angular-todo-list/back-end, and execute the following commands:
+
+<details>
+<summary><i>with <b>npm</b></i></summary>
+
+```bash
+# Install dependencies
+$ npm install ou npm i
+
+# Start development server
+$ npm run server
+
+```
+
+</details>
+
+<details>
+<summary><i>with <b>yarn</b></i></summary>
+
+```bash
+# Install dependencies
+$ yarn install
+
+# Start development server
+$ yarn run server
+
+```
+
+</details>
+
+> ⚠️ The development server will start on port: 3000 - <http://localhost:3000>
 
 </div>
 
@@ -117,17 +158,17 @@ $ ng serve --open ou ng s -o
 
 <div align="center">
 
-|                                                       |
-| :---------------------------------------------------: |
-|     Drag and Drop tasks from one list to another      |
-|                 Delete and edit tasks                 |
-| Save to Local storage and retrieve from Local Storage |
+|                  |
+| :--------------: |
+|  Search by name  |
+| Filter by status |
+| CRUD operations  |
 
 </div>
 
 ---
 
-## :boy: **Autor**
+## :boy: **Author**
 
 <div align="center">
 
@@ -147,7 +188,7 @@ Developed with ❤️ by Gleison Almeida 👋🏽 Contact me!
 
 ---
 
-## :balance_scale: **Licença**
+## :balance_scale: **License**
 
 <div align="center">
 

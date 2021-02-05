@@ -10,8 +10,8 @@
 </p>
 
 <p align="center"> 
-  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/gleisonkz/kanban-board?color=3498db&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/kanban-board?color=3498db&style=for-the-badge">   
+  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">   
   <a href="https://github.com/gleisonkz">
     <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge">
   </a>  
@@ -23,7 +23,7 @@
  <a href="#information_source-sobre">Sobre</a> •
  <a href="#arrow_forward-executar">Executar</a> •
  <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
- <a href="#sparkles-conceitos">Conceitos</a> •
+ <a href="#brain-conceitos">Conceitos</a> •
  <a href="#sparkles-funcionalidades">Funcionalidades</a> •
  <a href="#boy-autor">Autor</a> •
  <a href="#balance_scale-licença">Licença</a>
@@ -61,7 +61,7 @@ Para executar esse projeto você precisa baixar este repositório, ter o Gerenci
 
 🌐 FrontEnd
 
-Abra o prompt de comando no diretório do projeto, e execute os seguintes códigos:
+Abra o prompt de comando no diretório do projeto na pasta angular-todo-list/front-end, e execute os seguintes códigos:
 
 <details>
   <summary><i>com <b>npm</b></i></summary>
@@ -154,7 +154,7 @@ $ yarn run server
 
 ---
 
-## :sparkles: **Conceitos**
+## :brain: **Conceitos**
 
 <div align="center">
 
