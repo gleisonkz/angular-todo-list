@@ -10,12 +10,12 @@
 </p>
 
 <p align="center"> 
-  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">   
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge&label=Ultimo%20Commit">   
   <a href="https://github.com/gleisonkz">
-    <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge">
+    <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge&label=Desenvolvedor">
   </a>  
-  <img alt="Project License" src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge"/>  
+  <img alt="Project License" src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge&label=Licença"/>  
 </p>
 
 <p align="center">
@@ -168,8 +168,6 @@ $ yarn run server
 |   Error State Matcher Customizado   |
 
 </div>
-
----
 
 ---
 

@@ -9,8 +9,8 @@
   <img alt="Comics ++" src=".github/logo.jpeg" width="250px"/>
 </p>
 
-<p align="center"> 
-  <img alt="Repository Size" src="https://img.shields.io/github/repo-size/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">
+<p align="center">   
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/angular-todo-list?color=3498db&style=for-the-badge">   
   <a href="https://github.com/gleisonkz">
     <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge">
@@ -47,7 +47,7 @@
 
 <div align="center">
 
-Application built to practice some concepts about Drag and drop with Angular 11.
+Application built to practice some concepts of my Angular Study's Group.
 
 ---
 
@@ -142,9 +142,9 @@ $ yarn run server
 
 <div align="center">
 
-|           :globe_with_meridians: FrontEnd           |
-| :-------------------------------------------------: |
-|          [Angular 11](https://angular.io/)          |
+|           :globe_with_meridians: FrontEnd           |                        🖥 BackEnd                         |
+| :-------------------------------------------------: | :------------------------------------------------------: |
+|          [Angular 11](https://angular.io/)          | [Json-Server](https://www.npmjs.com/package/json-server) |
 | [Angular Material 11](https://material.angular.io/) |
 |           [SASS](https://sass-lang.com/)            |
 | [TypeScript 4.0.2](https://www.typescriptlang.org/) |
@@ -154,11 +154,28 @@ $ yarn run server
 
 ---
 
+## :brain: **Concepts**
+
+<div align="center">
+
+|       :page_facing_up:       |
+| :--------------------------: |
+| Pass data between components |
+|        Reactive Forms        |
+|           Services           |
+|     Material Components      |
+|       Custom Directive       |
+|  Custom Error State Matcher  |
+
+</div>
+
+---
+
 ## :sparkles: **Features**
 
 <div align="center">
 
-|                  |
+| :page_facing_up: |
 | :--------------: |
 |  Search by name  |
 | Filter by status |
