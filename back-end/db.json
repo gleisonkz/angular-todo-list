@@ -1,24 +1,24 @@
 {
   "todo": [
     {
-      "title": "Aprender Angular",
-      "isDone": true,
-      "id": 1
-    },
-    {
-      "title": "Aprender React",
+      "title": "React",
       "isDone": true,
       "id": 2
     },
     {
-      "title": "Aprender Vue",
+      "title": "Angular",
       "isDone": true,
       "id": 3
     },
     {
-      "title": "Aprender Svelte",
-      "isDone": true,
-      "id": 4
+      "title": "New",
+      "isDone": false,
+      "id": 5
+    },
+    {
+      "title": "Nova Tarefa",
+      "isDone": false,
+      "id": 6
     }
   ]
 }
