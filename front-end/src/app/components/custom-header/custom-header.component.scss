@@ -42,3 +42,20 @@
     width: rem(500);
   }
 }
+
+.form {
+  width: rem(500);
+
+  &--filter {
+    display: flex;
+    justify-content: space-between;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    mat-form-field + mat-form-field {
+      margin-left: rem(20);
+    }
+  }
+}

@@ -5,6 +5,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { CustomErrorStateMatcher } from './custom-error-state-matcher';
     MatCheckboxModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatSelectModule,
   ],
   providers: [
     { provide: ErrorStateMatcher, useValue: new CustomErrorStateMatcher() },

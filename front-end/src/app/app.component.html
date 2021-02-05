@@ -1,2 +1,5 @@
-<custom-header (newEvent)="reloadTodos()"></custom-header>
+<custom-header
+  (filterEvent)="getFilteredTodos($event)"
+  (newEvent)="reloadTodos()"
+></custom-header>
 <todo-list></todo-list>

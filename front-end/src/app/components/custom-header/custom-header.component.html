@@ -2,7 +2,7 @@
   <h1 class="header__title">(NG) => Devs | TODO LIST</h1>
   <h4 class="header__subtitle">Angular 11 Development by Gleison de Almeida</h4>
 
-  <form [formGroup]="formGroup">
+  <form class="form form--todo" [formGroup]="formGroup">
     <mat-form-field [appearance]="'outline'">
       <mat-label>Nova Tarefa</mat-label>
       <input
@@ -23,4 +23,33 @@
       <mat-hint>aperte enter para salvar ou clique no botão</mat-hint>
     </mat-form-field>
   </form>
+  <div class="form form--filter">
+    <mat-form-field appearance="outline">
+      <mat-label>Filtro por status</mat-label>
+      <mat-select
+        #select
+        (valueChange)="filter($event)"
+        [formControl]="todoStatusFilter"
+        disableRipple
+      >
+        <mat-option value="">Todas</mat-option>
+        <mat-option value="false">Incompletas</mat-option>
+        <mat-option value="true">Completas</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field [appearance]="'outline'">
+      <mat-label>Pesquisar</mat-label>
+      <input
+        [formControl]="todoNameFilter"
+        matInput
+        placeholder="pesquisar por nome"
+        (keyup.enter)="filter(select.value)"
+      />
+      <button (click)="filter(select.value)" class="header__btn" matSuffix>
+        <mat-icon matSuffix>search</mat-icon>
+      </button>
+
+      <mat-hint>aperte enter para salvar ou clique no botão</mat-hint>
+    </mat-form-field>
+  </div>
 </header>

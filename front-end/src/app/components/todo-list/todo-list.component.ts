@@ -18,6 +18,14 @@ export class TodoListComponent implements OnInit {
     this.getAllTodos();
   }
 
+  getFilteredTodos(isDone: string, name: string): void {
+    this.todoService
+      .getFilteredEntities(isDone, name)
+      .subscribe((todos: Todo[]) => {
+        this.todos = todos;
+      });
+  }
+
   getAllTodos() {
     this.todoService
       .getAllEntities()

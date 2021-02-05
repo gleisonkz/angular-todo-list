@@ -23,6 +23,14 @@ export class TodoService {
     return this.http.get<Todo>(`${this.ENDPOINT}/${todoID}`);
   }
 
+  getFilteredEntities(isDone: string, name: string): Observable<Todo[]> {
+    return this.http.get<Todo[]>(
+      `${this.ENDPOINT}/?q=${name}${!!isDone ? '&isDone=' : ''}${
+        !!isDone ? isDone : ''
+      }`
+    );
+  }
+
   getAllEntities(): Observable<Todo[]> {
     return this.http.get<Todo[]>(this.ENDPOINT);
   }
