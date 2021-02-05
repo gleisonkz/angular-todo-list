@@ -1,6 +1,6 @@
 {
-  "Todo": {
-    "Title": "string",
-    "IsDone": "boolean"
+  "todo": {
+    "title": "string",
+    "isDone": "boolean"
   }
 }
