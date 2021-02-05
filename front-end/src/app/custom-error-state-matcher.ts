@@ -10,7 +10,7 @@ export class CustomErrorStateMatcher implements ErrorStateMatcher {
     return !!(
       control &&
       control.invalid &&
-      (control.untouched || control.dirty || control.touched || isSubmitted)
+      (control.dirty || control.touched || isSubmitted)
     );
   }
 }
