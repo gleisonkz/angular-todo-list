@@ -6,24 +6,24 @@
       "id": 3
     },
     {
-      "title": "Nova Tarefa",
-      "isDone": false,
-      "id": 6
-    },
-    {
       "title": "comprar pão com alho",
       "isDone": false,
       "id": 7
     },
     {
-      "title": "comprar pão com alho",
+      "title": "Aprender a usa o toast",
       "isDone": false,
       "id": 8
     },
     {
-      "title": "Nova Tarefa",
+      "title": "mais 1 caso",
       "isDone": false,
-      "id": 9
+      "id": 10
+    },
+    {
+      "title": "outra tarefa",
+      "isDone": false,
+      "id": 11
     }
   ]
 }

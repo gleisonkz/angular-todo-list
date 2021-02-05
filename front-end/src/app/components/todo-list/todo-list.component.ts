@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HotToastService } from '@ngneat/hot-toast';
+import { delay } from 'rxjs/operators';
 import { Todo } from 'src/app/models/todo.model';
 import { UpdateEvent } from 'src/app/models/update-event';
 import { TodoResource } from './../../models/todo.model';
@@ -12,7 +14,10 @@ import { TodoService } from './../../services/todo.service';
 export class TodoListComponent implements OnInit {
   todos: Todo[];
 
-  constructor(private todoService: TodoService) {}
+  constructor(
+    private todoService: TodoService,
+    private toastService: HotToastService
+  ) {}
 
   ngOnInit(): void {
     this.getAllTodos();
@@ -37,9 +42,18 @@ export class TodoListComponent implements OnInit {
   }
 
   deleteTodo(todoID: number) {
-    this.todoService.deleteEntity(todoID).subscribe(() => {
-      alert(`Você deletou o todo ID: ${todoID}`);
-      this.getAllTodos();
-    });
+    this.todoService
+      .deleteEntity(todoID)
+      .pipe(
+        delay(1500),
+        this.toastService.observe({
+          loading: 'Deletando',
+          success: 'Tarefa deletada com sucesso',
+          error: 'Algo deu errado',
+        })
+      )
+      .subscribe(() => {
+        this.getAllTodos();
+      });
   }
 }

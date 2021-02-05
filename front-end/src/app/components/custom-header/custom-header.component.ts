@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { HotToastService } from '@ngneat/hot-toast';
 import { TodoFilterEvent } from './../../models/todo-filter-event';
 import { TodoResource } from './../../models/todo.model';
 import { TodoService } from './../../services/todo.service';
@@ -10,7 +11,10 @@ import { TodoService } from './../../services/todo.service';
   styleUrls: ['./custom-header.component.scss'],
 })
 export class CustomHeaderComponent implements OnInit {
-  constructor(private todoService: TodoService) {}
+  constructor(
+    private todoService: TodoService,
+    private toastService: HotToastService
+  ) {}
   @Output()
   newEvent: EventEmitter<void> = new EventEmitter();
   @Output()
@@ -40,7 +44,8 @@ export class CustomHeaderComponent implements OnInit {
       isDone: false,
     };
 
-    this.todoService.postEntity(todo).subscribe((todo) => {
+    this.todoService.postEntity(todo).subscribe(() => {
+      this.toastService.success('Tarefa cadastrada com sucesso');
       this.newEvent.emit();
       this.formGroup.reset();
     });

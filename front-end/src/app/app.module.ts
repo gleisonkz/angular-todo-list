@@ -13,6 +13,7 @@ import { CustomHeaderComponent } from './components/custom-header/custom-header.
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CustomErrorStateMatcher } from './custom-error-state-matcher';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CustomErrorStateMatcher } from './custom-error-state-matcher';
     ReactiveFormsModule,
     HttpClientModule,
     MatSelectModule,
+    HotToastModule.forRoot(),
   ],
   providers: [
     { provide: ErrorStateMatcher, useValue: new CustomErrorStateMatcher() },
