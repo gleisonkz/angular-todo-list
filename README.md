@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  <img alt="Comics ++" src=".github/logo.png" width="250px"/>
+  <img alt="Comics ++" src=".github/logo.jpeg" width="250px"/>
 </p>
 
 <p align="center"> 
@@ -23,6 +23,7 @@
  <a href="#information_source-sobre">Sobre</a> •
  <a href="#arrow_forward-executar">Executar</a> •
  <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
+ <a href="#sparkles-conceitos">Conceitos</a> •
  <a href="#sparkles-funcionalidades">Funcionalidades</a> •
  <a href="#boy-autor">Autor</a> •
  <a href="#balance_scale-licença">Licença</a>
@@ -33,8 +34,6 @@
 ## :eye_speech_bubble: **Visualizar**
 
 <div align="center">
-
-Deploy efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique Aqui](https://kz-kanban-board.netlify.app/)
 
 | Pré Visualização  
 | :------------------------------------------------------------------------------------:
@@ -48,7 +47,7 @@ Deploy efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique 
 
 <div align="center">
 
-Aplicação feita para praticar alguns conceitos de Drag and Drop utilizando o Angular 11.
+Aplicação feita para aplicar os conceitos ensinados no grupo de estudos de Angular.
 
 ---
 
@@ -59,6 +58,8 @@ Aplicação feita para praticar alguns conceitos de Drag and Drop utilizando o A
 <div align="center">
 
 Para executar esse projeto você precisa baixar este repositório, ter o Gerenciador de Pacotes do Node ([`NPM`](https://www.npmjs.com/get-npm)) ou o Gerenciador de Pacotes YARN ([`YARN`](https://yarnpkg.com/getting-started)) instalado.
+
+🌐 FrontEnd
 
 Abra o prompt de comando no diretório do projeto, e execute os seguintes códigos:
 
@@ -95,15 +96,55 @@ $ ng serve --open ou ng s -o
 
 </div>
 
+<div align="center">
+
+---
+
+🖥 BackEnd
+
+Abra o prompt de comando no diretório do projeto na pasta angular-todo-list/back-end, está é a pasta onde esta localizado o db.json, e execute os seguintes códigos:
+
+<details>
+<summary><i>com <b>npm</b></i></summary>
+
+```bash
+# Instalar dependências
+$ npm install ou npm i
+
+# Iniciar o servidor de desenvolvimento
+$ npm run server
+
+```
+
+</details>
+
+<details>
+<summary><i>com <b>yarn</b></i></summary>
+
+```bash
+# Instalar dependências
+$ yarn install
+
+# Iniciar o servidor de desenvolvimento
+$ yarn run server
+
+```
+
+</details>
+
+> ⚠️ a api será iniciada na porta: 3000 - Acesse <http://localhost:3000>
+
+</div>
+
 ---
 
 ## :hammer_and_wrench: **Tecnologias**
 
 <div align="center">
 
-|           :globe_with_meridians: FrontEnd           |
-| :-------------------------------------------------: |
-|          [Angular 11](https://angular.io/)          |
+|           :globe_with_meridians: FrontEnd           |                        🖥 BackEnd                         |
+| :-------------------------------------------------: | :------------------------------------------------------: |
+|          [Angular 11](https://angular.io/)          | [Json-Server](https://www.npmjs.com/package/json-server) |
 | [Angular Material 11](https://material.angular.io/) |
 |           [SASS](https://sass-lang.com/)            |
 | [TypeScript 4.0.2](https://www.typescriptlang.org/) |
@@ -113,15 +154,34 @@ $ ng serve --open ou ng s -o
 
 ---
 
+## :sparkles: **Conceitos**
+
+<div align="center">
+
+|          :page_facing_up:           |
+| :---------------------------------: |
+| Passagem de valores por componentes |
+|           Reactive Forms            |
+|              Services               |
+|         Material Components         |
+|        Diretiva Customizada         |
+|   Error State Matcher Customizado   |
+
+</div>
+
+---
+
+---
+
 ## :sparkles: **Funcionalidades**
 
 <div align="center">
 
-|              :page_facing_up:              |
-| :----------------------------------------: |
-| Drag and Drop das tarefas entre os quadros |
-|          Deletar e Editar tarefas          |
-|       Dados salvos no local storage        |
+|        :page_facing_up:        |
+| :----------------------------: |
+|       Pesquisa por nome        |
+| Criar Deletar e Editar tarefas |
+|       Filtro por status        |
 
 </div>
 
