@@ -1,9 +1,10 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Inject, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HotToastService } from '@ngneat/hot-toast';
+import { SERVICE_TOKEN } from 'src/service-token';
+import { ITodoService } from './../../../service-token';
 import { TodoFilterEvent } from './../../models/todo-filter-event';
 import { TodoResource } from './../../models/todo.model';
-import { TodoService } from './../../services/todo.service';
 
 @Component({
   selector: 'custom-header',
@@ -12,7 +13,8 @@ import { TodoService } from './../../services/todo.service';
 })
 export class CustomHeaderComponent implements OnInit {
   constructor(
-    private todoService: TodoService,
+    @Inject(SERVICE_TOKEN)
+    private todoService: ITodoService,
     private toastService: HotToastService
   ) {}
   @Output()
