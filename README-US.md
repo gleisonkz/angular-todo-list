@@ -175,11 +175,12 @@ $ yarn run server
 
 <div align="center">
 
-| :page_facing_up: |
-| :--------------: |
-|  Search by name  |
-| Filter by status |
-| CRUD operations  |
+|                 :page_facing_up:                 |
+| :----------------------------------------------: |
+|                  Search by name                  |
+|                 Filter by status                 |
+|                 CRUD operations                  |
+| Local Storage Service for production environment |
 
 </div>
 

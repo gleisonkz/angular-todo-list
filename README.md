@@ -142,13 +142,14 @@ $ yarn run server
 
 <div align="center">
 
-|           :globe_with_meridians: FrontEnd           |                        🖥 BackEnd                         |
-| :-------------------------------------------------: | :------------------------------------------------------: |
-|          [Angular 11](https://angular.io/)          | [Json-Server](https://www.npmjs.com/package/json-server) |
-| [Angular Material 11](https://material.angular.io/) |
-|           [SASS](https://sass-lang.com/)            |
-| [TypeScript 4.0.2](https://www.typescriptlang.org/) |
-|    [Rxjs 6.6.0](https://rxjs.dev/guide/overview)    |
+|             :globe_with_meridians: FrontEnd             |                        🖥 BackEnd                         |
+| :-----------------------------------------------------: | :------------------------------------------------------: |
+|            [Angular 11](https://angular.io/)            | [Json-Server](https://www.npmjs.com/package/json-server) |
+|   [Angular Material 11](https://material.angular.io/)   |
+|             [SASS](https://sass-lang.com/)              |
+|   [TypeScript 4.0.2](https://www.typescriptlang.org/)   |
+|      [Rxjs 6.6.0](https://rxjs.dev/guide/overview)      |
+| [NgNeat Hot Toast](https://ngneat.github.io/hot-toast/) |
 
 </div>
 
@@ -175,11 +176,12 @@ $ yarn run server
 
 <div align="center">
 
-|        :page_facing_up:        |
-| :----------------------------: |
-|       Pesquisa por nome        |
-| Criar Deletar e Editar tarefas |
-|       Filtro por status        |
+|                :page_facing_up:                 |
+| :---------------------------------------------: |
+|                Pesquisa por nome                |
+|         Criar Deletar e Editar tarefas          |
+|                Filtro por status                |
+| Local Storage Service para ambiente de produção |
 
 </div>
 
