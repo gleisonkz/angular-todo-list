@@ -25,8 +25,6 @@
   background-color: $color-primary !important;
 }
 
-// input
-
 .mat-input-element,
 .mat-select-value {
   color: white !important;
@@ -39,4 +37,21 @@
 
 .mat-input-element::placeholder {
   color: #888888;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: $color-primary;
+}
+
+.mat-form-field.mat-focused .mat-select-arrow {
+  color: $color-primary !important;
+}
+
+.mat-option:not(.mat-selected) .mat-option-text,
+.mat-select-arrow {
+  color: white;
+}
+
+.mat-select-panel {
+  background: rgb(105, 103, 103);
 }
