@@ -41,7 +41,7 @@
 
 <div align="center">
 
-Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique Aqui](https://comics-plus-plus.netlify.app/)
+Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique Aqui](https://kz-angular-todo-list.netlify.app/)
 
 | Pré Visualização  
 | :------------------------------------------------------------------------------------:
