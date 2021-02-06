@@ -1,4 +1,10 @@
 <div align="right">
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e3c52228-d2d0-4ecd-a86e-d5663fc30ca7/deploy-status)](https://app.netlify.com/sites/kz-angular-todo-list/deploys)
+
+</div>
+
+<div align="right">
   
   [![Portuguese](https://www.countryflags.io/br/flat/32.png)](README.md)
   [![English](https://www.countryflags.io/us/flat/32.png)](README-US.md)
@@ -34,6 +40,8 @@
 ## :eye_speech_bubble: **Visualizar**
 
 <div align="center">
+
+Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique Aqui](https://comics-plus-plus.netlify.app/)
 
 | Pré Visualização  
 | :------------------------------------------------------------------------------------:
