@@ -2,10 +2,26 @@
 @import "mixins";
 @import "functions";
 @import "colors";
+@import "media";
+
+:host {
+  @include flex-center;
+}
 
 .todo-list {
   margin-top: rem(20);
   @include flex-center(column);
+  align-items: stretch;
+  max-width: rem(500);
+  width: 100%;
+
+  @include medias($tiny-mobile, $mobile, $small-tablet) {
+    align-items: stretch;
+  }
+
+  @include small-tablet {
+    max-width: none;
+  }
 
   todo + todo {
     margin-top: rem(10);

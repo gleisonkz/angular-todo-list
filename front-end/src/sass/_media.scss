@@ -10,7 +10,7 @@ $media-large-tablet: 991;
 $media-tablet: 767;
 $media-small-tablet: 720;
 $media-mobile: 479;
-$media-tiny-mobile: 360;
+$media-tiny-mobile: 445;
 
 @mixin tiny-mobile {
   @media screen and (max-width: $media-tiny-mobile * 1px) {

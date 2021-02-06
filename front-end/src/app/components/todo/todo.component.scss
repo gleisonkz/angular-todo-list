@@ -2,6 +2,7 @@
 @import "mixins";
 @import "functions";
 @import "colors";
+@import "media";
 
 ::ng-deep .mat-checkbox-frame {
   border-color: white;
@@ -15,13 +16,34 @@
   }
 }
 
+::ng-deep .mat-checkbox-inner-container {
+  @include medias($tiny-mobile, $mobile) {
+    @include size-important(13);
+  }
+}
+
 .todo {
   display: flex;
   height: rem(76.56);
-  width: 420px;
+  max-width: rem(500);
+  width: 100%;
   background-color: $color-surface;
   padding: rem(10 20);
   border-radius: $global-radius;
+
+  @include medias($tiny-mobile, $mobile, $small-tablet) {
+    @include flex-center;
+    height: rem(60);
+    width: 100%;
+  }
+
+  @include small-tablet {
+    max-width: none;
+  }
+
+  @include tiny-mobile {
+    padding: rem(10);
+  }
 
   &__form {
     display: grid;
@@ -36,6 +58,16 @@
 
     mat-form-field {
       width: 100%;
+
+      @include tiny-mobile {
+        max-width: rem(150);
+      }
+    }
+  }
+
+  mat-icon {
+    @include tiny-mobile {
+      font-size: rem(20);
     }
   }
 
@@ -46,14 +78,25 @@
 
   &__text {
     display: block;
-    max-width: rem(250);
+
+    // max-width: rem(350);
+
     user-select: none;
     font-size: rem(16);
     color: white;
     align-items: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+
+    // @include tiny-mobile {
+    //   max-width: rem(150);
+    // }
+
+    // @include mobile {
+    //   max-width: rem(200);
+    // }
   }
 
   &__btn {

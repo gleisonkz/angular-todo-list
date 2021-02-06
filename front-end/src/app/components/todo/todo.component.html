@@ -5,10 +5,10 @@
       formControlName="isDone"
       class="todo__checkbox"
     >
-      <span class="todo__text" *ngSwitchCase="'show'">{{
-        todoControl.value
-      }}</span></mat-checkbox
-    >
+      <span class="todo__text" *ngSwitchCase="'show'">
+        {{ todoControl.value }}
+      </span>
+    </mat-checkbox>
     <div class="todo__mode-container">
       <mat-form-field *ngSwitchCase="'edit'">
         <input

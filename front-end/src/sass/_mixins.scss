@@ -54,6 +54,11 @@
   height: rem($height);
 }
 
+@mixin size-important($width, $height: $width) {
+  width: rem($width) !important;
+  height: rem($height) !important;
+}
+
 @mixin full-size {
   width: 100%;
   height: 100%;

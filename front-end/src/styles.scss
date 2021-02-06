@@ -2,16 +2,16 @@
 @import "mixins";
 @import "colors";
 @import "material";
-
-html,
-body {
-  height: 100%;
-}
+@import "media";
 
 body {
   margin: 0;
   background-color: $color-background;
   font-family: $font-primary;
+
+  @include medias($tiny-mobile, $mobile, $small-tablet) {
+    padding: rem(20);
+  }
 }
 
 * {

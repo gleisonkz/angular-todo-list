@@ -2,12 +2,32 @@
 @import "mixins";
 @import "functions";
 @import "colors";
+@import "media";
+
+$mobile-size: 300px;
 
 .header {
   padding: rem(20);
   @include flex-center(column);
   min-height: rem(200);
   background-color: $color-surface;
+  width: 100%;
+
+  @include medias($tiny-mobile, $mobile, $small-tablet) {
+    border-radius: $global-radius;
+  }
+
+  &__title {
+    @include tiny-mobile {
+      font-size: rem(18);
+    }
+  }
+
+  &__subtitle {
+    @include tiny-mobile {
+      font-size: rem(11);
+    }
+  }
 
   &__title,
   &__subtitle {
@@ -39,22 +59,44 @@
 
   mat-form-field {
     width: rem(500);
+
+    @include medias($tiny-mobile, $mobile, $small-tablet) {
+      width: 100%;
+    }
   }
 }
 
 .form {
   width: rem(500);
 
+  @include medias($tiny-mobile, $mobile, $small-tablet) {
+    width: 100%;
+  }
+
   &--filter {
     display: flex;
     justify-content: space-between;
 
+    @include tiny-mobile {
+      flex-direction: column;
+    }
+
     mat-form-field {
       width: 100%;
+
+      @include medias($mobile, $small-tablet) {
+        &:first-of-type {
+          min-width: rem(120);
+        }
+      }
     }
 
     mat-form-field + mat-form-field {
       margin-left: rem(20);
+
+      @include tiny-mobile {
+        margin-left: 0;
+      }
     }
   }
 }
