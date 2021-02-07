@@ -68,7 +68,6 @@ export class TodoComponent implements OnInit {
     this.changeDetectorRef.detectChanges();
   }
 
-  //TODO: colocar botão de confirmação para celular no edit-in place
   edit(): void {
     this.currentMode = Mode.Edit;
     this.changeDetectorRef.detectChanges();
