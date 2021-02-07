@@ -12,8 +12,10 @@ import {
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable, Subject, Subscription } from 'rxjs';
 import { TruncateTextDirective } from 'src/app/directives/truncate-text.directive';
-import { Mode } from 'src/app/models/mode.model';
+import { Mode } from 'src/app/enums/mode.enum';
 import { UpdateEvent } from 'src/app/models/update-event';
+import { KeyBoardKey } from './../../enums/keyboard-key.enum';
+import { Action } from './../../models/action.model';
 import { Todo, TodoResource } from './../../models/todo.model';
 
 @Component({
@@ -75,13 +77,16 @@ export class TodoComponent implements OnInit {
   }
 
   handleKeyPress(event: KeyboardEvent) {
-    if (event.key === 'Enter') {
-      this.save();
-    }
+    const actions: Action<void>[] = [
+      { match: event.key === KeyBoardKey.Enter, execute: this.save.bind(this) },
+      {
+        match: event.key === KeyBoardKey.Esc,
+        execute: this.changeMode.bind(this),
+      },
+    ];
 
-    if (event.key === 'Escape') {
-      this.changeMode();
-    }
+    const action = actions.find((action) => action.match);
+    action?.execute();
   }
 
   save(changeMode = true): void {
