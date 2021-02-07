@@ -23,7 +23,7 @@
  <a href="#information_source-about">About</a> •
  <a href="#arrow_forward-run">Run</a> •
  <a href="#hammer_and_wrench-technologies">Technologies</a> • 
- <a href="#brain-concepts">Concepts</a> •
+ <a href="#brain-applied-concepts">Concepts</a> •
  <a href="#sparkles-features">Features</a> •
  <a href="#boy-author">Author</a> •
  <a href="#balance_scale-license">License</a>
@@ -142,30 +142,33 @@ $ yarn run server
 
 <div align="center">
 
-|           :globe_with_meridians: FrontEnd           |                        🖥 BackEnd                         |
-| :-------------------------------------------------: | :------------------------------------------------------: |
-|          [Angular 11](https://angular.io/)          | [Json-Server](https://www.npmjs.com/package/json-server) |
-| [Angular Material 11](https://material.angular.io/) |
-|           [SASS](https://sass-lang.com/)            |
-| [TypeScript 4.0.2](https://www.typescriptlang.org/) |
-|    [Rxjs 6.6.0](https://rxjs.dev/guide/overview)    |
+|             :globe_with_meridians: FrontEnd             |                        🖥 BackEnd                         |
+| :-----------------------------------------------------: | :------------------------------------------------------: |
+|            [Angular 11](https://angular.io/)            | [Json-Server](https://www.npmjs.com/package/json-server) |
+|   [Angular Material 11](https://material.angular.io/)   |
+|             [SASS](https://sass-lang.com/)              |
+|   [TypeScript 4.0.2](https://www.typescriptlang.org/)   |
+|      [Rxjs 6.6.0](https://rxjs.dev/guide/overview)      |
+| [NgNeat Hot Toast](https://ngneat.github.io/hot-toast/) |
 
 </div>
 
 ---
 
-## :brain: **Concepts**
+## :brain: **Applied Concepts**
 
 <div align="center">
 
-|       :page_facing_up:       |
-| :--------------------------: |
-| Pass data between components |
-|        Reactive Forms        |
-|           Services           |
-|     Material Components      |
-|       Custom Directive       |
-|  Custom Error State Matcher  |
+|                  :page_facing_up:                  |
+| :------------------------------------------------: |
+| Decorators @Output, @Input, @ViewChild and @Inject |
+|      Directives *ngFor, *ngSwitch and custom       |
+|                 Template Variables                 |
+|             Event and Property Binding             |
+|                   Reactive Forms                   |
+|                      Services                      |
+|                  Injection Token                   |
+|                Material Components                 |
 
 </div>
 
@@ -178,9 +181,12 @@ $ yarn run server
 |                 :page_facing_up:                 |
 | :----------------------------------------------: |
 |                  Search by name                  |
-|                 Filter by status                 |
 |                 CRUD operations                  |
+|                 Filter by status                 |
 | Local Storage Service for production environment |
+|                Responsive layout                 |
+|          Custom Truncate Text Directive          |
+|            Custom Error State Matcher            |
 
 </div>
 
