@@ -54,8 +54,6 @@ export class TodoStorageService implements ITodoService {
 
   getFilteredEntities(isDone: string, name: string): Observable<Todo[]> {
     let todos = this.todos;
-    console.log(todos);
-    console.log('passou', isDone);
 
     todos = !!isDone
       ? todos
