@@ -46,11 +46,9 @@
   }
 
   &__form {
-    display: grid;
+    display: flex;
     align-items: center;
     flex: 1;
-    grid-template-columns: min-content 1fr auto auto;
-    column-gap: 10px;
   }
 
   &__mode-container {
@@ -58,10 +56,6 @@
 
     mat-form-field {
       width: 100%;
-
-      @include tiny-mobile {
-        max-width: rem(150);
-      }
     }
   }
 
@@ -74,29 +68,16 @@
   &__checkbox {
     grid-row: 1;
     display: flex;
+    margin-right: rem(10);
   }
 
   &__text {
     display: block;
 
-    // max-width: rem(350);
-
     user-select: none;
     font-size: rem(16);
     color: white;
     align-items: center;
-
-    // white-space: nowrap;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-
-    // @include tiny-mobile {
-    //   max-width: rem(150);
-    // }
-
-    // @include mobile {
-    //   max-width: rem(200);
-    // }
   }
 
   &__btn {
@@ -107,6 +88,7 @@
     transition: color 0.3s;
 
     &--edit {
+      margin-left: rem(10);
       &:hover {
         color: $color-primary;
       }

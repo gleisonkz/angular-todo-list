@@ -1,11 +1,16 @@
-<div class="todo">
+<div #$todo class="todo">
   <form [formGroup]="formGroup" class="todo__form" [ngSwitch]="currentMode">
     <mat-checkbox
       (change)="save(false)"
       formControlName="isDone"
       class="todo__checkbox"
     >
-      <span class="todo__text" *ngSwitchCase="'show'">
+      <span
+        truncateText
+        [maxWidth$]="width$"
+        class="todo__text"
+        *ngSwitchCase="'show'"
+      >
         {{ todoControl.value }}
       </span>
     </mat-checkbox>
