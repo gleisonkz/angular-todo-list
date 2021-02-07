@@ -74,6 +74,16 @@ export class TodoComponent implements OnInit {
     this.input.nativeElement.select();
   }
 
+  handleKeyPress(event: KeyboardEvent) {
+    if (event.key === 'Enter') {
+      this.save();
+    }
+
+    if (event.key === 'Escape') {
+      this.changeMode();
+    }
+  }
+
   save(changeMode = true): void {
     if (this.formGroup.invalid) return;
     this.update.emit({ itemID: this.todo.id, item: this.formGroup.value });
