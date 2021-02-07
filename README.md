@@ -29,7 +29,7 @@
  <a href="#information_source-sobre">Sobre</a> •
  <a href="#arrow_forward-executar">Executar</a> •
  <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
- <a href="#brain-conceitos">Conceitos</a> •
+ <a href="#brain-conceitos-aplicados">Conceitos</a> •
  <a href="#sparkles-funcionalidades">Funcionalidades</a> •
  <a href="#boy-autor">Autor</a> •
  <a href="#balance_scale-licença">Licença</a>
@@ -163,18 +163,20 @@ $ yarn run server
 
 ---
 
-## :brain: **Conceitos**
+## :brain: **Conceitos Aplicados**
 
 <div align="center">
 
-|          :page_facing_up:           |
-| :---------------------------------: |
-| Passagem de valores por componentes |
-|           Reactive Forms            |
-|              Services               |
-|         Material Components         |
-|        Diretiva Customizada         |
-|   Error State Matcher Customizado   |
+|                 :page_facing_up:                 |
+| :----------------------------------------------: |
+| Decorators @Output, @Input, @ViewChild e @Inject |
+|    Diretivas *ngFor, *ngSwitch e customizada     |
+|                Template Variables                |
+|            Event and Property Binding            |
+|                  Reactive Forms                  |
+|                     Services                     |
+|                 Injection Token                  |
+|               Material Components                |
 
 </div>
 
@@ -190,6 +192,9 @@ $ yarn run server
 |         Criar Deletar e Editar tarefas          |
 |                Filtro por status                |
 | Local Storage Service para ambiente de produção |
+|                Layout Responsivo                |
+|     Diretiva Customizada para truncar texto     |
+|         Error State Matcher Customizado         |
 
 </div>
 
