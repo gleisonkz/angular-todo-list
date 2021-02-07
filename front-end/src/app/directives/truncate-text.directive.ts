@@ -17,7 +17,6 @@ export class TruncateTextDirective implements OnInit {
     this.nativeElement.style.whiteSpace = 'nowrap';
     this.nativeElement.style.overflow = 'hidden';
     this.nativeElement.style.textOverflow = 'ellipsis';
-
     this.maxWidth$.subscribe((currentWidth) => {
       const newMaxWidth = currentWidth - 100;
       this.nativeElement.style.maxWidth = `${newMaxWidth}px`;

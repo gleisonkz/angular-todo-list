@@ -69,8 +69,7 @@ export class TodoComponent implements OnInit {
   }
 
   edit(): void {
-    this.currentMode = Mode.Edit;
-    this.changeDetectorRef.detectChanges();
+    this.changeMode();
     this.input.nativeElement.focus();
     this.input.nativeElement.select();
   }

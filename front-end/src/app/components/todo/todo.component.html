@@ -26,8 +26,8 @@
     </div>
   </form>
 
-  <button matButton (click)="edit()" class="todo__btn todo__btn--edit">
-    <mat-icon>edit</mat-icon>
+  <button (click)="edit()" class="todo__btn todo__btn--edit">
+    <mat-icon>{{ currentMode === "edit" ? "check" : "edit" }}</mat-icon>
   </button>
   <button (click)="delete.emit(todo.id)" class="todo__btn todo__btn--delete">
     <mat-icon>delete</mat-icon>
