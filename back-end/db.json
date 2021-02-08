@@ -1,27 +1,27 @@
 {
   "todo": [
     {
-      "title": "Angular",
+      "title": "Aprendendo a utilizar o Angular",
       "isDone": true,
       "id": 3
     },
     {
-      "title": "comprar pão com alho",
+      "title": "Aprender a utilizar diretivas",
       "isDone": false,
       "id": 7
     },
     {
-      "title": "Aprender a usa o toast",
+      "title": "Aprender a utilizar pipes",
       "isDone": false,
       "id": 8
     },
     {
-      "title": "mais 1 caso",
+      "title": "Aprender a utilizar services",
       "isDone": false,
       "id": 10
     },
     {
-      "title": "new task",
+      "title": "Aprender a utilizar decorators",
       "isDone": false,
       "id": 11
     }

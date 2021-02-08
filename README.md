@@ -43,9 +43,9 @@
 
 Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique Aqui](https://kz-angular-todo-list.netlify.app/)
 
-| Pré Visualização  
-| :------------------------------------------------------------------------------------:
-| <kbd><img src=".github/preview.gif" alt="Desktop"/></kbd>
+|                             :computer:Desktop                             |                             :iphone: Mobile                              |
+| :-----------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| <kbd><img src=".github/previews/desktop-preview.png" alt="Tablet"/></kbd> | <kbd><img src=".github/previews/mobile-preview.png" alt="Mobile"/></kbd> |
 
 </div>
   

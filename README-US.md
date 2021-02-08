@@ -35,9 +35,11 @@
 
 <div align="center">
 
-| Preview
-| :------------------------------------------------------------------------------------:
-| <kbd><img src=".github/preview.gif" alt="Desktop"/></kbd>
+Front-end deployed at [Netlify](https://www.netlify.com/) to see: [Click Here](https://kz-angular-todo-list.netlify.app/)
+
+|                             :computer:Desktop                             |                             :iphone: Mobile                              |
+| :-----------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| <kbd><img src=".github/previews/desktop-preview.png" alt="Tablet"/></kbd> | <kbd><img src=".github/previews/mobile-preview.png" alt="Mobile"/></kbd> |
 
 </div>
   
