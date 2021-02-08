@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  <img alt="Comics ++" src=".github/logo.jpeg" width="250px"/>
+  <img alt="Angular 11" src=".github/logo.jpeg" width="250px"/>
 </p>
 
 <p align="center">   
@@ -162,7 +162,7 @@ $ yarn run server
 |                  :page_facing_up:                  |
 | :------------------------------------------------: |
 | Decorators @Output, @Input, @ViewChild and @Inject |
-|      Directives *ngFor, *ngSwitch and custom       |
+|            Directives *ngFor, *ngSwitch            |
 |                 Template Variables                 |
 |             Event and Property Binding             |
 |                   Reactive Forms                   |
@@ -185,7 +185,6 @@ $ yarn run server
 |                 Filter by status                 |
 | Local Storage Service for production environment |
 |                Responsive layout                 |
-|          Custom Truncate Text Directive          |
 |            Custom Error State Matcher            |
 
 </div>

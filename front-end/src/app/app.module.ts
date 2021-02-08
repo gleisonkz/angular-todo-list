@@ -15,7 +15,6 @@ import { CustomHeaderComponent } from './components/custom-header/custom-header.
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CustomErrorStateMatcher } from './custom-error-state-matcher';
-import { TruncateTextDirective } from './directives/truncate-text.directive';
 import { TodoStorageService } from './services/todo-storage.service';
 import { TodoService } from './services/todo.service';
 
@@ -25,7 +24,6 @@ import { TodoService } from './services/todo.service';
     TodoComponent,
     TodoListComponent,
     CustomHeaderComponent,
-    TruncateTextDirective,
   ],
   imports: [
     BrowserModule,
