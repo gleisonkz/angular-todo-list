@@ -55,3 +55,9 @@
 .mat-select-panel {
   background: rgb(105, 103, 103);
 }
+
+mat-checkbox > label,
+mat-checkbox > label > span.mat-checkbox-label {
+  width: 100%;
+  overflow: hidden;
+}

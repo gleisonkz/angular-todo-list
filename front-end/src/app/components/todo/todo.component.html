@@ -5,17 +5,13 @@
       formControlName="isDone"
       class="todo__checkbox"
     >
-      <span
-        truncateText
-        [maxWidth$]="width$"
-        class="todo__text"
-        *ngSwitchCase="'show'"
-      >
+      <span class="todo__text" *ngSwitchCase="'show'">
         {{ todoControl.value }}
       </span>
     </mat-checkbox>
-    <div class="todo__mode-container">
-      <mat-form-field *ngSwitchCase="'edit'">
+
+    <div class="todo__mode-container" *ngSwitchCase="'edit'">
+      <mat-form-field>
         <input
           #myInput
           (keyup)="handleKeyPress($event)"

@@ -49,6 +49,8 @@
     display: flex;
     align-items: center;
     flex: 1;
+    width: 100%;
+    overflow: hidden;
   }
 
   &__mode-container {
@@ -68,7 +70,12 @@
   &__checkbox {
     display: flex;
     margin-right: rem(10);
+    overflow: hidden;
   }
+
+  // ::ng-deep form > mat-checkbox > label.mat-checkbox-layout {
+  //   width: 100%;
+  // }
 
   &__text {
     display: block;
@@ -77,6 +84,15 @@
     font-size: rem(16);
     color: white;
     align-items: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__btn {
