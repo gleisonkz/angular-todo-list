@@ -12,7 +12,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { Mode } from 'src/app/enums/mode.enum';
 import { UpdateEvent } from 'src/app/models/update-event';
-import { KeyBoardKey } from './../../enums/keyboard-key.enum';
+import { KeyBoardKey } from '../../enums/keyboard';
 import { Action } from './../../models/action.model';
 import { Todo, TodoResource } from './../../models/todo.model';
 

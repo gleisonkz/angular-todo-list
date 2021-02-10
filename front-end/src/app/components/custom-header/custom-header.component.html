@@ -10,6 +10,8 @@
         matInput
         [disabled]="isFetching"
         placeholder="Digite uma nova tarefa para cadastro"
+        (EnterKeyPress)="newTodo()"
+        (EscKeyPress)="this.formGroup.reset()"
       />
       <button
         (click)="newTodo()"

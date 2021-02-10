@@ -17,6 +17,7 @@ import { TodoComponent } from './components/todo/todo.component';
 import { CustomErrorStateMatcher } from './custom-error-state-matcher';
 import { TodoStorageService } from './services/todo-storage.service';
 import { TodoService } from './services/todo.service';
+import { KeyPressListenerDirective } from './directives/key-press-listener.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TodoService } from './services/todo.service';
     TodoComponent,
     TodoListComponent,
     CustomHeaderComponent,
+    KeyPressListenerDirective,
   ],
   imports: [
     BrowserModule,
