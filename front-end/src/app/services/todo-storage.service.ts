@@ -11,13 +11,13 @@ export class TodoStorageService implements ITodoService {
   private readonly STORAGE_KEY = 'TODOS';
 
   constructor() {
-    const data = localStorage.getItem(this.STORAGE_KEY);
-    if (data == null) this.todos = TODOS_MOCK;
+    this.todos = localStorage.getItem(this.STORAGE_KEY)
+      ? this.todos
+      : TODOS_MOCK;
   }
 
   get todos(): Todo[] {
-    const data = localStorage.getItem(this.STORAGE_KEY);
-    if (data == null) throw new Error('A chave não existe no storage');
+    const data = localStorage.getItem(this.STORAGE_KEY) || '[]';
     return JSON.parse(data);
   }
 
@@ -25,14 +25,10 @@ export class TodoStorageService implements ITodoService {
     localStorage.setItem(this.STORAGE_KEY, JSON.stringify(todos));
   }
 
-  setStorageData() {}
-
   postEntity(todo: TodoResource): Observable<Todo> {
     const todos = this.todos;
-    const nextID =
-      todos.map((c) => c.id).reduce((acc, cur) => (acc > cur ? acc : cur)) + 1;
+    const nextID = todos.sort((a, b) => b.id - a.id)[0].id + 1;
     const newTodo = { ...todo, id: nextID };
-
     this.todos = [...todos, newTodo];
     return of(newTodo);
   }
