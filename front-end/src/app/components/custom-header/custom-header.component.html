@@ -8,8 +8,8 @@
       <input
         formControlName="todoName"
         matInput
+        [disabled]="isFetching"
         placeholder="Digite uma nova tarefa para cadastro"
-        (keyup.enter)="newTodo()"
       />
       <button
         (click)="newTodo()"
