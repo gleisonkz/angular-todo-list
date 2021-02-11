@@ -10,6 +10,7 @@
         matInput
         [disabled]="isFetching"
         placeholder="Digite uma nova tarefa para cadastro"
+        KeyPressListener
         (EnterKeyPress)="newTodo()"
         (EscKeyPress)="this.formGroup.reset()"
       />
@@ -43,7 +44,9 @@
         [formControl]="todoNameFilter"
         matInput
         placeholder="pesquisar por nome"
-        (keyup.enter)="filter(select.value)"
+        KeyPressListener
+        (EnterKeyPress)="filter(select.value)"
+        (EscKeyPress)="todoNameFilter.reset()"
       />
       <button (click)="filter(select.value)" class="header__btn" matSuffix>
         <mat-icon matSuffix>search</mat-icon>

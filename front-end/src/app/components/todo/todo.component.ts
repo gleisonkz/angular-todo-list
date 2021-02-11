@@ -12,8 +12,6 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { Mode } from 'src/app/enums/mode.enum';
 import { UpdateEvent } from 'src/app/models/update-event';
-import { KeyBoardKey } from '../../enums/keyboard';
-import { Action } from './../../models/action.model';
 import { Todo, TodoResource } from './../../models/todo.model';
 
 @Component({
@@ -56,19 +54,6 @@ export class TodoComponent implements OnInit {
     this.changeMode();
     this.$input.nativeElement.focus();
     this.$input.nativeElement.select();
-  }
-
-  handleKeyPress(event: KeyboardEvent) {
-    const actions: Action<void>[] = [
-      { match: event.key === KeyBoardKey.Enter, execute: this.save.bind(this) },
-      {
-        match: event.key === KeyBoardKey.Esc,
-        execute: this.changeMode.bind(this),
-      },
-    ];
-
-    const action = actions.find((action) => action.match);
-    action?.execute();
   }
 
   save(changeMode = true): void {
