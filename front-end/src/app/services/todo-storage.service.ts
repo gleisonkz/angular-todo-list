@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { ITodoService } from 'src/service-token';
+import { ITodoService } from 'src/app/service-token';
 import { Todo, TodoResource } from '../models/todo.model';
 import { TODOS_MOCK } from './../mock/todos.mock';
 

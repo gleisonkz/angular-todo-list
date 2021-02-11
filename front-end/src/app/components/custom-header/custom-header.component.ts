@@ -2,8 +2,8 @@ import { Component, EventEmitter, Inject, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HotToastService } from '@ngneat/hot-toast';
 import { finalize } from 'rxjs/operators';
-import { SERVICE_TOKEN } from 'src/service-token';
-import { ITodoService } from './../../../service-token';
+import { SERVICE_TOKEN } from 'src/app/service-token';
+import { ITodoService } from '../../service-token';
 import { TodoFilterEvent } from './../../models/todo-filter-event';
 import { TodoResource } from './../../models/todo.model';
 
