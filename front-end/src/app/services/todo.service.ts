@@ -25,13 +25,13 @@ export class TodoService {
   getFilteredEntities(isDone: string, name: string): Observable<Todo[]> {
     const params = [
       { key: 'isDone', value: isDone },
-      { key: 'name', value: name },
+      { key: 'q', value: name },
     ]
       .filter((c) => c.value)
       .map((d) => `${d.key}=${d.value}`)
       .join('&');
 
-    return this.http.get<Todo[]>(`${this.ENDPOINT}/?q=${params}`);
+    return this.http.get<Todo[]>(`${this.ENDPOINT}/?${params}`);
   }
 
   getAllEntities(): Observable<Todo[]> {
