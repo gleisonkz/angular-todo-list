@@ -16,6 +16,7 @@
     <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge">
   </a>  
   <img alt="Project License" src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge"/>
+     <img alt="Project Status" src="https://img.shields.io/badge/done-%3498db?color=green&style=for-the-badge&label=Status">  
 </p>
 
 <p align="center">
