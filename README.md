@@ -196,6 +196,7 @@ $ yarn run server
 | Local Storage Service para ambiente de produção |
 |                Layout Responsivo                |
 |         Error State Matcher Customizado         |
+|  Diretiva customizada para eventos do teclado   |
 
 </div>
 

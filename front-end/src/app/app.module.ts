@@ -9,12 +9,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HotToastModule } from '@ngneat/hot-toast';
-import { SERVICE_TOKEN, tokenServiceFactory } from 'src/service-token';
+import { SERVICE_TOKEN, tokenServiceFactory } from 'src/app/service-token';
 import { AppComponent } from './app.component';
 import { CustomHeaderComponent } from './components/custom-header/custom-header.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoComponent } from './components/todo/todo.component';
 import { CustomErrorStateMatcher } from './custom-error-state-matcher';
+import { KeyPressListenerDirective } from './directives/key-press-listener.directive';
 import { TodoStorageService } from './services/todo-storage.service';
 import { TodoService } from './services/todo.service';
 
@@ -24,6 +25,7 @@ import { TodoService } from './services/todo.service';
     TodoComponent,
     TodoListComponent,
     CustomHeaderComponent,
+    KeyPressListenerDirective,
   ],
   imports: [
     BrowserModule,

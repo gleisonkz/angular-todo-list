@@ -1,9 +1,9 @@
 import { InjectionToken } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { Todo, TodoResource } from './app/models/todo.model';
-import { TodoStorageService } from './app/services/todo-storage.service';
-import { TodoService } from './app/services/todo.service';
+import { Todo, TodoResource } from './models/todo.model';
+import { TodoStorageService } from './services/todo-storage.service';
+import { TodoService } from './services/todo.service';
 
 export interface ITodoService {
   postEntity(todo: TodoResource): Observable<Todo>;

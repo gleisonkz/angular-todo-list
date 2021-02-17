@@ -3,7 +3,7 @@ import { HotToastService } from '@ngneat/hot-toast';
 import { delay } from 'rxjs/operators';
 import { Todo } from 'src/app/models/todo.model';
 import { UpdateEvent } from 'src/app/models/update-event';
-import { ITodoService, SERVICE_TOKEN } from 'src/service-token';
+import { ITodoService, SERVICE_TOKEN } from 'src/app/service-token';
 import { TodoResource } from './../../models/todo.model';
 
 @Component({

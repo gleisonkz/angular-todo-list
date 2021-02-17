@@ -189,6 +189,7 @@ $ yarn run server
 | Local Storage Service for production environment |
 |                Responsive layout                 |
 |            Custom Error State Matcher            |
+|       Custom Directive for keyboard events       |
 
 </div>
 
